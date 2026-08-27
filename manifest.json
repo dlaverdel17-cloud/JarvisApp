@@ -1,0 +1,16 @@
+{
+  "short_name": "Jarvis AI",
+  "name": "JARVIS - Academic AI Assistant",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2097/2097276.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#0A0F1A",
+  "theme_color": "#00F7FF",
+  "display": "standalone",
+  "orientation": "portrait"
+}
