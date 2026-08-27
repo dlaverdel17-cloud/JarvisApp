@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from google import genai
+import os
 
 app = FastAPI(title="Jarvis AI Core")
 
@@ -13,8 +14,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# API KEY DE GEMINI
-GEMINI_API_KEY = " "
+# API KEY DE GEMINI DESDE RENDER
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # Cliente de Gemini
 client = genai.Client(api_key=GEMINI_API_KEY)
