@@ -39,7 +39,7 @@ async def process_jarvis(query: QueryModel):
         print("PREGUNTA RECIBIDA:", query.prompt)
 
         response = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-3.6-flash",
             contents=query.prompt
         )
 
